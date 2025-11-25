@@ -262,8 +262,7 @@ ServiceFabricBackup/
 *.rptproj.bak
 
 # SQL Server files
-*.mdf
-*.ldf
+
 *.ndf
 
 # Business Intelligence projects
@@ -361,3 +360,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore tất cả file log SQL Server
+App_Data/*.ldf
+
+# Giữ lại file MDF để clone project
+!App_Data/QLBH2025.mdf
